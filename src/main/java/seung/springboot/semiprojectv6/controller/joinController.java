@@ -21,18 +21,18 @@ public class joinController {
 
     @GetMapping("/agree")
     public String agree() {
-        return "join/agree.tiles";
+        return "join/agree";
     }
 
     @GetMapping("/checkme")
     public String checkme() {
-        return "join/checkme.tiles";
+        return "join/checkme";
     }
 
     @PostMapping("/joinme")
     public ModelAndView joinme(Member mb){
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("join/joinme.tiles");
+        mv.setViewName("join/joinme");
         mv.addObject("mb", mb);
         return mv;
     }
