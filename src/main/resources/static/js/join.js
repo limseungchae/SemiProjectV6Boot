@@ -66,7 +66,7 @@ joinbtn?.addEventListener('click', ()=>{
     else if (grecaptcha.getResponse() === '') alert('자동가입방지를 확인하세요!!');
     else if (joinfrm.checkuid.value === 'no') alert('아이디 중복 체크하세요!!');
     else {
-        joinfrm.zipcode.value = joinfrm.zip1.value + '-' + joinfrm.zip1.value;
+        joinfrm.zipcode.value = joinfrm.zip1.value + '-' + joinfrm.zip2.value;
         joinfrm.email.value = joinfrm.email1.value + '@' + joinfrm.email2.value;
         joinfrm.phone.value = joinfrm.tel1.value + '-' + joinfrm.tel2.value + '-' + joinfrm.tel3.value;
 
