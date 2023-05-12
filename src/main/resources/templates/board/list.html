@@ -4,7 +4,7 @@
       layout:decorate="~{layout/template}">
 
 <th:block layout:fragment="content">
-    <div id="main" th:with="pglink=${'/board/list?cpg='}">
+    <div id="main" th:with="pglink=${(#strings.isEmpty(param.fkey)) ? '/board/list?cpg=': '/board/find?ftype=' + param.ftype + '&fkey=' + param.fkey +'&cpg='}">
 
         <div class="mt-5">
             <i class="fa-solid fa-pen-to-square fa-2xl"> 게시판 </i>
@@ -13,7 +13,7 @@
 
         <div class="row mt-5">
             <div class="row offset-2 col-6">
-                <if test="${not empty sessionScope.UID}">
+                <th:block th:if="${not #strings.isEmpty(session.UID)}">
                     <div class="col-3">
                         <select class="form-select" id="findtype">
                             <option value="title">제목</option>
@@ -27,13 +27,14 @@
                     <div class="col-3">
                         <button type="button" class="btn btn-light" id="findbtn">
                             <i class="fa-solid fa-magnifying-glass"> </i> 검색하기</button></div></if>
-                <if test="${empty sessionScope.UID}">&nbsp;</if>
+                </th:block>
             </div>
             <div class="col-2 text-end">
-                <if test="${not empty sessionScope.UID}">
+                <th:block th:if="${session.UID ne null}">
                     <button type="button" class="btn btn-light" id="newbtn">
                         <i class="fa fa-plus-circle"> </i> 새글쓰기</button></if>
-                <if test="${empty sessionScope.UID}">&nbsp;</if>
+                </th:block>
+                &nbsp;
             </div>
         </div>
 
