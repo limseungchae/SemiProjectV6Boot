@@ -1,6 +1,6 @@
-package seung.springboot.semiprojectv6boot.service;
+package seung.springboot.semiprojectv6.service;
 
-import seung.springboot.semiprojectv5.model.Member;
+import seung.springboot.semiprojectv6.model.Member;
 
 import javax.servlet.http.HttpSession;
 

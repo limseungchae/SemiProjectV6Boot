@@ -1,6 +1,6 @@
-package seung.springboot.semiprojectv6boot.dao;
+package seung.springboot.semiprojectv6.dao;
 
-import seung.springboot.semiprojectv5.model.Board;
+import seung.springboot.semiprojectv6.model.Board;
 
 import java.util.List;
 import java.util.Map;

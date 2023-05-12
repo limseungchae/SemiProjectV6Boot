@@ -1,4 +1,4 @@
-package seung.springboot.semiprojectv6boot.model;
+package seung.springboot.semiprojectv6.model;
 
 import lombok.Data;
 

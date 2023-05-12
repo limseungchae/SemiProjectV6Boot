@@ -1,7 +1,7 @@
-package seung.springboot.semiprojectv6boot.dao;
+package seung.springboot.semiprojectv6.dao;
 
-import seung.springboot.semiprojectv5.model.Member;
-import seung.springboot.semiprojectv5.model.Zipcode;
+import seung.springboot.semiprojectv6.model.Member;
+import seung.springboot.semiprojectv6.model.Zipcode;
 
 import java.util.List;
 

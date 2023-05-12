@@ -1,9 +1,9 @@
-package seung.springboot.semiprojectv6boot.service;
+package seung.springboot.semiprojectv6.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import seung.springboot.semiprojectv5.dao.MemberDAO;
-import seung.springboot.semiprojectv5.model.Member;
+import seung.springboot.semiprojectv6.dao.MemberDAO;
+import seung.springboot.semiprojectv6.model.Member;
 
 import javax.servlet.http.HttpSession;
 

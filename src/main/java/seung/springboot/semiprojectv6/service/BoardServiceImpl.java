@@ -1,9 +1,9 @@
-package seung.springboot.semiprojectv6boot.service;
+package seung.springboot.semiprojectv6.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import seung.springboot.semiprojectv5.dao.BoardDAO;
-import seung.springboot.semiprojectv5.model.Board;
+import seung.springboot.semiprojectv6.dao.BoardDAO;
+import seung.springboot.semiprojectv6.model.Board;
 
 import java.util.HashMap;
 import java.util.List;
